@@ -1,7 +1,7 @@
 {
   "name": "update-travis",
   "version": "0.0.0",
-  "description": "My fantabulous module",
+  "description": "Utility to update `.travis.yml` to newer Node.js versions",
   "license": "MIT",
   "repository": "jfmengels/update-travis",
   "author": {
@@ -14,22 +14,28 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-    "test": "xo && ava"
+    "test": "xo"
   },
   "files": [
-    "index.js",
     "cli.js"
   ],
   "keywords": [
-    "cli-app",
+    "Travis",
+    "travis",
+    "travis.yml",
+    "yml",
+    "yaml",
     "cli",
-    ""
+    "node",
+    "Node",
+    "node.js",
+    "Node.js"
   ],
   "dependencies": {
+    "inquirer": "^1.0.2",
     "meow": "^3.7.0"
   },
   "devDependencies": {
-    "ava": "^0.14.0",
     "xo": "^0.14.0"
   }
 }
