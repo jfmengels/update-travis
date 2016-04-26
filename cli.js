@@ -39,6 +39,8 @@ inquirer.prompt(questions)
 	}
 	doc.node_js = versions.split(','); // eslint-disable-line camelcase
 	fs.writeFileSync(filepath, yaml.dump(doc), 'utf8');
-	console.log('For migrating your next project, run:');
-	console.log('  update-travis --versions ' + versions);
+	var updateAndCommitMsg = '  update-travis --versions ' + versions +
+		' && git add .travis.yml && git commit -m "Update Node.js version for Travis"';
+	console.log('Done!\nFor migrating your next project, run:\n' + updateAndCommitMsg);
+	console.log('To also push, run:\n' + updateAndCommitMsg + ' && git push origin HEAD');
 });
