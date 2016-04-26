@@ -1,44 +1,22 @@
 # update-travis [![Build Status](https://travis-ci.org/jfmengels/update-travis.svg?branch=master)](https://travis-ci.org/jfmengels/update-travis)
 
-> My fantabulous module
+> Utility to update `.travis.yml` to newer Node.js versions
 
 
 ## Install
 
 ```
-$ npm install --save update-travis
+$ npm install -g update-travis
 ```
-
 
 ## Usage
 
-```js
-const updateTravis = require('update-travis');
-
-updateTravis('unicorns');
-//=> 'unicorns & rainbows'
+```
+$ cd path/to/my/project
+$ update-travis
 ```
 
-
-## API
-
-### updateTravis(input, [options])
-
-#### input
-
-Type: `string`
-
-Lorem ipsum.
-
-#### options
-
-##### foo
-
-Type: `boolean`<br>
-Default: `false`
-
-Lorem ipsum.
-
+Then answer a question, and you'll be good to go.
 
 ## CLI
 
@@ -49,17 +27,18 @@ $ npm install --global update-travis
 ```
 $ update-travis --help
 
+  Utility to update `.travis.yml` to newer Node.js versions
+
   Usage
-    update-travis [input]
+    $ update-travis
 
   Options
-    --foo  Lorem ipsum. [Default: false]
+    --versions Specify the versions you want to support (separated by a `,`)
 
   Examples
     $ update-travis
-    unicorns & rainbows
-    $ update-travis ponies
-    ponies & rainbows
+    $ update-travis --versions 6,5,4,0.10
+    $ update-travis --versions stable,0.12
 ```
 
 

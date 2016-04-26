@@ -9,7 +9,7 @@ var inquirer = require('inquirer');
 
 var cli = meow([
 	'Usage',
-	'  $ update-travis [input]',
+	'  $ update-travis',
 	'',
 	'Options',
 	'  --versions Specify the versions you want to support (separated by a `,`)',
