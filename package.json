@@ -1,6 +1,6 @@
 {
   "name": "update-travis",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Utility to update `.travis.yml` to newer Node.js versions",
   "license": "MIT",
   "repository": "jfmengels/update-travis",
